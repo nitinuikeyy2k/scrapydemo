@@ -25,7 +25,6 @@ class FileSystem(ms.Store):
 
 file_system = FileSystem()
 now = datetime.now()
-#time = now.strftime("%Y%m%d")
 time = now.strftime("%d-%b-%Y/")
 path = os.path.join(file_system.get_path(), time)
 if file_system.is_path_exist(path):
